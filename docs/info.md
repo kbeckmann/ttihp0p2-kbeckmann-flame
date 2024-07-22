@@ -9,12 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+It shows a flame and plays audio.
 
 ## How to test
 
-Explain how to use your project
+Run `make` in /test.
+
+Run the web viewer, found under /web/. See separate readme.
+
+Run on a ULX3S FPGA. Run `make` and `make prog` under /ulx3s/
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Enable the design and provide a 25MHz clock. Connect VGA and Audio according to the Demoscene challenge documentation https://tinytapeout.com/competitions/demoscene/
