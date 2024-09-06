@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 # Flame - Konrad & Linus tinytapeout08 demo compo entry
 
-![preview](preview.png)
+![preview](preview.jpg)
 
 ## How it works
 
