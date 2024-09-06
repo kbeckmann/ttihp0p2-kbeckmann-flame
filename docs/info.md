@@ -7,6 +7,10 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
+# Flame - Konrad & Linus tinytapeout08 demo compo entry
+
+![preview](preview.png)
+
 ## How it works
 
 It shows a flame and plays audio. The VGA output is standard 640x480@60Hz, audio is simple 1 bit PWM.

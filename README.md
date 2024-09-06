@@ -2,7 +2,7 @@
 
 # TT08-Flame Demoscene submission
 
-![preview](./screenshot.jpg)
+![preview](./docs/preview.jpg)
 
 - [Read the documentation for project](docs/info.md)
 
