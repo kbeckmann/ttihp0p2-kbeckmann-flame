@@ -25,12 +25,6 @@ module tb ();
 
   tt_um_kbeckmann_flame tt_um_kbeckmann_flame_instance (
 
-      // Include power ports for the Gate Level test:
-`ifdef GL_TEST
-      .VPWR(1'b1),
-      .VGND(1'b0),
-`endif
-
       .ui_in  (ui_in),    // Dedicated inputs
       .uo_out (uo_out),   // Dedicated outputs
       .uio_in (uio_in),   // IOs: Input path
