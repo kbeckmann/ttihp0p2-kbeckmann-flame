@@ -58,7 +58,7 @@ describe('ErrorParser', () => {
     const parser = new ErrorParser();
     const errors = [
       `%Warning-WIDTH: src/project.v:91:22: Operator ASSIGNW expects 9 bits on the Assign RHS, but Assign RHS's ADD generates 32 or 20 bits.`,
-      `                                   : ... In instance tt_um_top.worley_inst`,
+      `                                   : ... In instance tt_um_kbeckmann_flame.worley_inst`,
       `   91 |   assign points_x[0] = 100 + t;`,
       `      |                      ^`,
       `                ... For warning description see https://verilator.org/warn/WIDTH?v=4.205`,
@@ -79,7 +79,7 @@ describe('ErrorParser', () => {
         endColumn: 23,
         message:
           `Operator ASSIGNW expects 9 bits on the Assign RHS, but Assign RHS's ADD generates 32 or 20 bits.\n` +
-          `In instance tt_um_top.worley_inst\n` +
+          `In instance tt_um_kbeckmann_flame.worley_inst\n` +
           `For warning description see https://verilator.org/warn/WIDTH?v=4.205\n` +
           `Use "/* verilator lint_off WIDTH */" and lint_on around source to disable this message.`,
       },

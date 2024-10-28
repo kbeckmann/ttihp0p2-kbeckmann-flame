@@ -6,7 +6,7 @@
 
 `default_nettype none
 
-module tt_um_top(
+module tt_um_kbeckmann_flame(
 `ifdef VERILATOR
   // Extra signals for web simulator
   output wire        audio_en , // Audio Enabled. Set to false to enable video rendering

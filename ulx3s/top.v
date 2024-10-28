@@ -73,7 +73,7 @@ module top
 
   assign led = uo_out;
 
-  tt_um_top tt_um_top_instance (
+  tt_um_kbeckmann_flame tt_um_kbeckmann_flame_instance (
       .ui_in  (ui_in),    // Dedicated inputs
       .uo_out (uo_out),   // Dedicated outputs
       .uio_in (uio_in),   // IOs: Input path

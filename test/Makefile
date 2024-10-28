@@ -9,7 +9,7 @@ PROJECT_SOURCES = \
 	hvsync_gen.v \
 	scale_rom.v \
 	tria.v \
-	tt_um_top.v \
+	tt_um_kbeckmann_flame.v \
 	voice.v \
 
 ifneq ($(GATES),yes)

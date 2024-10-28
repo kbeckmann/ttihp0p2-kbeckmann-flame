@@ -8,7 +8,7 @@ VERILOG += \
 	../src/hvsync_gen.v \
 	../src/scale_rom.v \
 	../src/tria.v \
-	../src/tt_um_top.v \
+	../src/tt_um_kbeckmann_flame.v \
 	../src/voice.v \
 
 

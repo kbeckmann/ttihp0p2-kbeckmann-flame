@@ -23,7 +23,7 @@ const inputButtons = Array.from(document.querySelectorAll('#input-values button'
 
 const codeEditorDiv = document.getElementById('code-editor');
 const editor = monaco.editor.create(codeEditorDiv!, {
-  value: currentProject.sources['tt_um_top.v'],
+  value: currentProject.sources['tt_um_kbeckmann_flame.v'],
   language: 'systemverilog',
   scrollBeyondLastLine: false,
   minimap: {
@@ -73,7 +73,7 @@ editor.onDidChangeModelContent(async () => {
   stopped = true;
   currentProject.sources = {
     ...currentProject.sources,
-    'tt_um_top.v': editor.getValue(),
+    'tt_um_kbeckmann_flame.v': editor.getValue(),
   };
   const res = await compileVerilator({
     topModule: currentProject.topModule,
@@ -226,7 +226,7 @@ for (const example of examples) {
   button.textContent = example.name;
   button.addEventListener('click', async () => {
     currentProject = structuredClone(example);
-    editor.setValue(currentProject.sources['tt_um_top.v']);
+    editor.setValue(currentProject.sources['tt_um_kbeckmann_flame.v']);
   });
   buttons?.appendChild(button);
 }
@@ -257,7 +257,7 @@ document.querySelector('#share-button')?.addEventListener('click', () => {
 });
 
 document.querySelector('#clipboard-button')?.addEventListener('click', () => {
-  const code = btoa(JSON.stringify(currentProject.sources['tt_um_top.v']));
+  const code = btoa(JSON.stringify(currentProject.sources['tt_um_kbeckmann_flame.v']));
   navigator.clipboard.writeText(code);
 });
 
